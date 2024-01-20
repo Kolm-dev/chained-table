@@ -1,0 +1,39 @@
+.accounts-header {
+	text-align: center;
+	padding: 20px;
+	font-size: 20px;
+}
+.accounts-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.account {
+	margin: 20px;
+	border: 1px solid #ccc;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	transition: all 0.2s;
+	background-color: #f3ebeb9d;
+}
+
+.account .info-block {
+	font-size: large;
+	text-align: center;
+}
+
+.account:hover {
+	cursor: pointer;
+	box-shadow: 2px 3px 1px #ccc;
+	background-color: #f0eeee;
+}
+
+.account h4 {
+	color: rgb(47, 51, 49);
+	font-size: small;
+}
