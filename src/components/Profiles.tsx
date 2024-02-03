@@ -20,6 +20,10 @@ const countryEmoji: IEmojiObject = {
 	Poland: "🇵🇱",
 	Moldova: "🇲🇩",
 	Netherlands: "🇳🇱",
+	//добавь в хэш таблицу еще несколько стран таких как Бразилия, Испания, Австралия
+	Brazil: "🇧🇷",
+	Spain: "🇪🇸",
+	Australia: "🇦🇺",
 };
 
 export const Profiles = () => {
@@ -43,7 +47,7 @@ export const Profiles = () => {
 							<div
 								onClick={() => onClickProfile(profile.profileId)}
 								key={profile.profileId}
-								className="profile bg-body-secondary mx-1 my-1 col-2 rounded text-center pointer card card-body"
+								className="profile bg-body-secondary mx-1 my-1 col-2 rounded text-center pointer card card-body d-inline-block w-auto"
 							>
 								<p className="d-flex flex-column text-black">
 									<span>ID: {profile.accountId}</span>

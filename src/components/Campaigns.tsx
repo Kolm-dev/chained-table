@@ -1,8 +1,6 @@
 import { useParams } from "react-router-dom";
 import { campaigns } from "../data/fetchedData";
-
 import BackButton from "./BackButton";
-
 import "./styles/Campaigns.css";
 import { useMemo, useState } from "react";
 import { ICampaign } from "../types";
@@ -12,8 +10,7 @@ type sortField = "clicks" | "cost" | "date";
 export const Campaigns = () => {
 	const { profileId } = useParams<{ profileId: string }>();
 	const [page, setPage] = useState(1);
-	// eslint-disable-next-line @typescript-eslint/no-unused-vars
-	const [itemsOnPage, _] = useState(5);
+	const itemsOnPage = 5;
 
 	const filteredCampaigns = campaigns.filter(c => c.profileId === Number(profileId));
 
@@ -41,6 +38,7 @@ export const Campaigns = () => {
 	}, [sorted, page, itemsOnPage]);
 
 	const totalPage = Math.ceil(sorted.length / itemsOnPage);
+
 	return (
 		<>
 			<BackButton />
@@ -54,12 +52,22 @@ export const Campaigns = () => {
 								className="campaign"
 								key={c.campaignId}
 							>
-								<p>Campaign ID: {c.campaignId}</p>
+								<h4>
+									<b>Campaign</b> ID: {c.campaignId}
+								</h4>
 								<p>
-									Clicks {c.clicks}, cost: ${c.cost} <br />
-									Total price: {(c.clicks * c.cost).toFixed(2)}$
+									<span>
+										<b>Clicks</b>:
+									</span>{" "}
+									{c.clicks} | <span>Cost:</span> ${c.cost} |{" "}
+									<span>
+										<u>Total price</u>:
+									</span>{" "}
+									${(c.clicks * c.cost).toFixed(2)}
 								</p>
-								<p>Created: {c.date}</p>
+								<p>
+									<b>Created</b>: {c.date}
+								</p>
 							</div>
 						))}
 					</>
