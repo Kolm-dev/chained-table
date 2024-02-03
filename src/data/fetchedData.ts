@@ -17,17 +17,17 @@ export const profiles: IProfile[] = [
 ];
 
 export const campaigns: ICampaign[] = [
-	{ campaignId: 1, profileId: 1, clicks: 120, cost: 20.5, date: "2024-01-01" },
-	{ campaignId: 2, profileId: 1, clicks: 150, cost: 30.2, date: "2024-01-02" },
-	{ campaignId: 3, profileId: 2, clicks: 100, cost: 5.8, date: "2024-01-03" },
-	{ campaignId: 4, profileId: 2, clicks: 110, cost: 6.4, date: "2024-01-04" },
-	{ campaignId: 5, profileId: 3, clicks: 140, cost: 7.9, date: "2024-01-05" },
-	{ campaignId: 6, profileId: 3, clicks: 130, cost: 6.2, date: "2024-01-06" },
-	{ campaignId: 7, profileId: 4, clicks: 160, cost: 9.1, date: "2024-01-07" },
-	{ campaignId: 8, profileId: 4, clicks: 170, cost: 2.3, date: "2024-01-08" },
-	{ campaignId: 9, profileId: 5, clicks: 180, cost: 1.9, date: "2024-01-09" },
-	{ campaignId: 10, profileId: 5, clicks: 190, cost: 2.5, date: "2024-01-10" },
-	{ campaignId: 11, profileId: 4, clicks: 190, cost: 2.5, date: "2024-01-10" },
+	{ campaignId: 1, profileId: 1, clicks: 120, cost: 20.5, date: "2023-12-28" },
+	{ campaignId: 2, profileId: 1, clicks: 150, cost: 30.2, date: "2023-12-29" },
+	{ campaignId: 3, profileId: 2, clicks: 100, cost: 5.8, date: "2023-12-30" },
+	{ campaignId: 4, profileId: 2, clicks: 110, cost: 6.4, date: "2023-12-31" },
+	{ campaignId: 5, profileId: 3, clicks: 140, cost: 7.9, date: "2024-01-01" },
+	{ campaignId: 6, profileId: 3, clicks: 130, cost: 6.2, date: "2024-01-02" },
+	{ campaignId: 7, profileId: 4, clicks: 160, cost: 9.1, date: "2024-01-03" },
+	{ campaignId: 8, profileId: 4, clicks: 170, cost: 2.3, date: "2024-01-04" },
+	{ campaignId: 9, profileId: 5, clicks: 180, cost: 1.9, date: "2024-01-05" },
+	{ campaignId: 10, profileId: 5, clicks: 190, cost: 2.5, date: "2024-01-06" },
+	{ campaignId: 11, profileId: 4, clicks: 190, cost: 2.5, date: "2024-01-07" },
 
 ];
 
