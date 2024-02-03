@@ -1,30 +1,25 @@
-# React + TypeScript + Vite
+# Chained Table Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Test task, but maybe someone will find it useful for prototyping
 
-Currently, two official plugins are available:
+This project is designed to display mock data in a hierarchical structure consisting of Account > Profile > Campaigns. It leverages TypeScript, React, and Bootstrap for its development.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Getting Started
 
-## Expanding the ESLint configuration
+To get started with this template, follow these steps:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clone the repository:`git clone https://github.com/Kolm-dev/chained-table`
+2. Install dependencies: `yarn`
+3. Start the development server: `yarn dev`
 
-- Configure the top-level `parserOptions` property like this:
+### Technologies
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- TypeScript
+- React
+- Bootstrap
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Screenshots
+
+![Screenshot](https://i2.paste.pics/9a8147ca0bc2f8f565e2a451e45ae919.png)
+![Screenshot](https://i2.paste.pics/ca0c83a66818e3ca5b36e540333f5102.png)
+![Screenshot](https://i2.paste.pics/ca381da6b3e321d9dc73b01c912b4656.png)
